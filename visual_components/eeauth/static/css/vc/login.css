@@ -1,0 +1,35 @@
+/* ================================= LOGIN */
+.form-signin {
+    max-width: 25em;
+    margin: 0 auto;
+}
+.form-signin .panel {
+    padding: 1em;
+    border: 0.1em solid #C10500 !important;
+}
+.form-signin .panel .panel-body {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.form-signin .panel .panel-body .form-group {
+    margin-top: 1.5em !important;
+    margin-bottom: 1.5em !important;
+}
+.form-signin .panel .panel-body .form-group .bar:before, .form-signin .panel .panel-body .form-group .bar:after {
+    background-color: #FFF !important;
+}
+.form-signin .atomic-number {
+    font-size: 1.3em;
+    text-align: center;
+}
+.form-signin .atomic-symbol {
+    font-size: 10em !important;
+    font-weight: 500;
+}
+.form-signin a {
+    color: #C10500 !important;
+    font-weight: bold;
+}
+.form-signin .btn {
+    margin-top: 2em;
+}

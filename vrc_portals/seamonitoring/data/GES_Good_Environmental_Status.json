@@ -1,0 +1,180 @@
+{
+  "descriptors": [ 
+    {
+      "description": "Biological Diversity",
+      "code": "1",
+      "criterias": [
+        {
+          "description": "Species Distribution",
+          "code": "1.1",
+          "indicators": [
+            {
+              "description": "Distributional Range",
+              "code": "1.1.1"
+            },
+            {
+              "description": "Distributional Pattern within the latter",
+              "code": "1.1.2"
+            },
+            {
+              "description": "Area covered by the Species (for sessile/benthic species)",
+              "code": "1.1.3"
+            }
+          ]
+        },
+        {
+          "description": "Population Size",
+          "code": "1.2",
+          "indicators": [
+            {
+              "description": "Population Abundance and/or Biomass",
+              "code": "1.2.1"
+            }
+          ]
+        },
+        {
+          "description": "Population Condition",
+          "code": "1.3",
+          "indicators": [
+            {
+              "description": "Population Demographic Characteristics",
+              "code": "1.3.1"
+            },
+            {
+              "description": "Population Generic Structure",
+              "code": "1.3.2"
+            }
+          ]
+        },
+        {
+          "description": "Habitat Distribution",
+          "code": "1.4",
+          "indicators": [
+            {
+              "description": "Distributional Range",
+              "code": "1.4.1"
+            },
+            {
+              "description": "Distributional Pattern",
+              "code": "1.4.2"
+            }
+          ]
+        },
+        {
+          "description": "Habitat Extent",
+          "code": "1.5",
+          "indicators": [
+            {
+              "description": "Habitat Areas",
+              "code": "1.5.1"
+            },
+            {
+              "description": "Habitat Volume, where relevant",
+              "code": "1.5.2"
+            }
+          ]
+        },
+        {
+          "description": "Habitat Condition",
+          "code": "1.6",
+          "indicators": [
+            {
+              "description": "Condition of the Typical Species and Communities",
+              "code": "1.6.1"
+            },
+            {
+              "description": "Relative Abundance and/or Biomass, as appropriate",
+              "code": "1.6.2"
+            },
+            {
+              "description": "Physical, Hydrological and Chemical Conditions",
+              "code": "1.6.3"
+            }
+          ]
+        },
+        {
+          "description": "Exosystem Structure",
+          "code": "1.7",
+          "indicators": [
+            {
+              "description": "Composition and relative proportions of Ecosystem Components (habitats, species)",
+              "code": "1.7.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Non-Indigenous Species",
+      "code": "2",
+      "criterias": [
+        {
+          "description": "Abundance and state of Non-Indigenous Species, in particular Invasive Species",
+          "code": "2.1",
+          "indicators": [
+            {
+              "description": "Trends in Abundance, Temporal Occurrence and Spatial Distribution of Non-Indigenous Species",
+              "code": "2.1.1"
+            }
+          ]
+        },
+        {
+          "description": "Environmental Impact of Invasive Non-Indigenous Species",
+          "code": "2.2",
+          "indicators": [
+            {
+              "description": "Ratio between Invasive Non-Indigenous Species and Native Species",
+              "code": "2.2.1"
+            },
+            {
+              "description": "Impacts of Non-Indigenous Invasive Species at the level of Species, Habitats and Ecosystem",
+              "code": "2.2.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Seafloor Integrity",
+      "code": "6",
+      "criterias": [
+        {
+          "description": "Physical Damage, having regard to Substrate Characteristics",
+          "code": "6.1",
+          "indicators": [
+            {
+              "description": "Type, Abundance, Biomass and Areal Extent of Relevant Biogenic Substrate",
+              "code": "6.1.1"
+            },
+            {
+              "description": "Extent of the Seabed significantly affected by Human Activities for the different Substrate Types",
+              "code": "6.1.2"
+            }
+          ]
+        },
+        {
+          "description": "Condition of Benthic Community",
+          "code": "6.2",
+          "indicators": [
+            {
+              "description": "Presence of particularly sensitive and/or tolerant Species",
+              "code": "6.2.1"
+            },
+            {
+              "description": "Multi-metric Indices assessing Benthic Community Condition and Funcionality, such as Species Diversity and Richness, proportion of opportunistic to sensitive Species",
+              "code": "6.2.2"
+            },
+            {
+              "description": "Proportion of Biomass or number of Individuals in the macrobenthos above specified length/size",
+              "code": "6.2.3"
+            },
+            {
+              "description": "Parameters describing the characteristics of the Size Spectrum of the Benthic Community",
+              "code": "6.2.4"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

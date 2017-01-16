@@ -1,0 +1,19 @@
+{% load cms_tags staticfiles sekizai_tags %}
+
+<div id="r-parent"></div>
+
+{% addtoblock "css" %}
+    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/vc/romanager.css' %}">
+{% endaddtoblock %}
+
+{% addtoblock "js" %}
+    <script type="text/javascript" src="{% static 'js/vc/rocreator.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/vc/addtoro.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/vc/removefromro.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/vc/romanager.js' %}"></script>
+    <script type="text/javascript">
+        $(function () {
+            $( '#r-parent' ).romanager();
+        });
+    </script>
+{% endaddtoblock %}

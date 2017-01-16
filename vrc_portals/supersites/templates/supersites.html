@@ -1,0 +1,14 @@
+{% extends "baseVRC.html" %}
+{% load cms_tags staticfiles sekizai_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block extra-css %}
+    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/app/supersites.css' %}">
+{% endblock extra-css %}
+
+<!-- 	<iframe class="ee-iframe" class="col-md-12 padding-0" src="http://www.earthobservations.org/gsnl.php" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation" height="700">Research Objects</iframe> -->
+{% block extra-js %}
+    <script type="text/javascript" src="{% static 'js/lib/bootstrap-multiselect.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/app/supersites.js' %}"></script>
+{% endblock extra-js %}

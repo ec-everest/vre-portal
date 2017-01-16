@@ -1,0 +1,48 @@
+{% extends "component-base.html" %}
+{% load cms_tags staticfiles sekizai_tags %}
+
+{% block content %}
+    <form id="l-form">
+        {% csrf_token %}
+    </form>
+
+    {% addtoblock "css" %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/lib/icheck/skins/flat/aero.css' %}"/>
+
+        <link rel="stylesheet" type="text/css" href="{% static 'css/vc/login.css' %}"/>
+    {% endaddtoblock %}
+
+    {% addtoblock "js" %}
+        <script src="{% static 'js/lib/icheck.min.js' %}"></script>
+
+        <script src="{% static 'js/vc/login.js' %}"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('#l-form').auth();
+            });
+        </script>
+    {% endaddtoblock %}
+{% endblock content %}
+
+{% block css-header %}
+&lt;link rel="stylesheet" type="text/css" href="{% static 'css/lib/icheck/skins/flat/aero.css' %}"/&gt;
+&lt;link rel="stylesheet" type="text/css" href="{% static 'css/vc/login.css' %}"/&gt;
+{% endblock css-header %}
+
+{% block js-header %}
+&lt;script src="{% static 'js/lib/icheck.min.js' %}"&gt;&lt;/script&gt;
+
+&lt;script src="{% static 'js/vc/login.js' %}"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+    var STATIC_URL = '{{ STATIC_URL }}';
+    $(function () {
+        $('#l-form').auth();
+    });
+&lt;/script&gt;
+{% endblock js-header %}
+
+{% block html %}
+&lt;form id="l-form"&gt;
+    {% csrf_token %}
+&lt;/form&gt;
+{% endblock html %}

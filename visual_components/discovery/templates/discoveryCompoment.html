@@ -1,0 +1,58 @@
+{% extends "component-base.html" %}
+{% load cms_tags staticfiles sekizai_tags %}
+
+{% block content %}
+<div id="d-parent"></div>
+
+{% addtoblock "css" %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/lib/bootstrap-datetimepicker.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/lib/bootstrap-multiselect.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/lib/clusterize.min.css' %}" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/vc/romanager.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/discovery.css' %}" />
+{% endaddtoblock %}
+
+{% addtoblock "js" %}
+    <script type="text/javascript" src="{% static 'js/lib/moment.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/lib/bootstrap-datetimepicker.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/lib/bootstrap-multiselect.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/lib/clusterize.min.js' %}"></script>
+
+    <script type="text/javascript" src="{% static 'js/vc/addtoro.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/discovery.js' %}"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#d-parent').discovery();
+        });
+    </script>
+{% endaddtoblock %}
+
+{% endblock content %}
+
+{% block css-header %}
+&lt;link rel="stylesheet" type="text/css" href="{% static 'css/lib/bootstrap-datetimepicker.min.css' %}" /&gt;
+&lt;link rel="stylesheet" type="text/css" href="{% static 'css/lib/bootstrap-multiselect.css' %}" /&gt;
+&lt;link rel="stylesheet" type="text/css" href="{% static 'css/lib/clusterize.min.css' %}" /&gt;
+
+&lt;link rel="stylesheet" type="text/css" href="{% static 'css/discovery.css' %}" /&gt;
+&lt;!-- Add CSS style to adapt to your page (eg.: &lt;style&gt;#d-parent { margin-top: 5em; margin-left: 1em; }&lt;/style&gt;) --&gt;
+{% endblock css-header %}
+
+{% block js-header %}
+&lt;script type="text/javascript" src="{% static 'js/lib/moment.js' %}"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="{% static 'js/lib/bootstrap-datetimepicker.min.js' %}"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="{% static 'js/lib/bootstrap-multiselect.js' %}"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="{% static 'js/lib/clusterize.min.js' %}"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="{% static 'js/discovery.js' %}"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+    $(function () {
+        $('#d-parent').discovery();
+    });
+&lt;/script&gt;
+{% endblock js-header %}
+
+{% block html %}
+&lt;div id="d-parent"&gt;&lt;/div&gt;
+{% endblock html %}

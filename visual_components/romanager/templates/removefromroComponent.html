@@ -1,0 +1,40 @@
+{% extends "component-base.html" %}
+{% load cms_tags staticfiles sekizai_tags %}
+
+{% block content %}
+    <div id="r-rparent"></div>
+    
+    {% addtoblock "css" %}
+        <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/vc/romanager.css' %}">
+    {% endaddtoblock %}
+    
+    {% addtoblock "js" %}
+        <script type="text/javascript" src="{% static 'js/vc/removefromro.js' %}"></script>
+        <script type="text/javascript">
+            $(function () {
+                $( '#r-rparent' ).removefromro( {
+                    btnClass: 'bg-white fg-ee-primary',
+                } );
+            });
+        </script>
+    {% endaddtoblock %}
+{% endblock content %}
+
+{% block css-header %}
+&lt;link rel="stylesheet" type="text/css" media="all" href="{% static 'css/vc/romanager.css' %}"&gt;
+{% endblock css-header %}
+
+{% block js-header %}
+&lt;script type="text/javascript" src="{% static 'js/vc/removefromro.js' %}"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+    $(function () {
+        $( '#r-rparent' ).addtoro( {
+            btnClass: 'bg-white fg-ee-primary',
+        } );
+    });
+&lt;/script&gt;
+{% endblock js-header %}
+
+{% block html %}
+&lt;div id="r-rparent"&gt;&lt;/div&gt;
+{% endblock html %}

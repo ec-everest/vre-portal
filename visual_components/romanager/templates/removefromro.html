@@ -1,0 +1,18 @@
+{% load cms_tags staticfiles sekizai_tags %}
+
+<div id="r-rparent"></div>
+
+{% addtoblock "css" %}
+    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/vc/romanager.css' %}">
+{% endaddtoblock %}
+
+{% addtoblock "js" %}
+    <script type="text/javascript" src="{% static 'js/vc/removefromro.js' %}"></script>
+    <script type="text/javascript">
+        $(function () {
+            $( '#r-rparent' ).removefromro( {
+                btnClass: 'bg-white fg-ee-primary',
+            } );
+        });
+    </script>
+{% endaddtoblock %}

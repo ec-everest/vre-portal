@@ -1,0 +1,35 @@
+#canvasOne {
+    min-height: 60vh;
+    height: 60vh;
+}
+#bottom-bar {
+    min-height: 20vh;
+    height: 20vh;
+}
+#right-bar-1 {
+    min-height: 39.9vh;
+    height: 39.9vh;
+}
+#right-bar-2 {
+    min-height: 39.9vh;
+    height: 39.9vh;
+}
+#user-header-menu {
+/*             padding-top: 0.7em; */
+}
+#user-header-menu > li > a {
+/*             padding-left: 0.5em; */
+    padding-right: 0.5em;
+    display: inline-block !important;
+}
+#user-header-menu:before {
+    content: " | ";
+    font-size: xx-large;
+}
+#user-header-menu > li > div.btn-group > button.dropdown-toggle {
+    background-color: #C10500;
+    border-color: #C10500;
+    color: white;
+    padding: 0 0 0.4em 0;
+    text-align: left;
+}

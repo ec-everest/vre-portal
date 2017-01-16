@@ -1,0 +1,84 @@
+{% load cms_tags staticfiles sekizai_tags %}
+
+<div class="col-md-{{ box.width }} col-sm-12 col-xs-12 padding-0">
+    <div class="col-md-12 col-sm-12 col-xs-12 padding-0">
+        <div class="col-md-12 col-sm-12 col-xs-12 padding-0">
+            <div class="panel {{ box.type }} ee-box">
+                <div class="panel-heading bg-white border-none">
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-left padding-0">
+                        <h4 class="text-left">Virtual Globle</h4>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-right padding-0">
+                        <h4>
+                            <span class="fa fa-gear box-title-icon-func text-right"></span>
+                            <span class="fa fa-power-off box-title-icon-func text-right"></span>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel-body {{ box.bodyAlign }}">
+                        {# if user.is_authenticated #}
+<!--                             <div class="on-top" data-spy="affix" data-offset-top="170" style="margin-top: 5em; margin-left: 1.5em;"> -->
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 padding-0">
+                                {% include 'romanager.html' %}
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 padding-0">
+                                {% include 'discovery.html' %}
+                            </div>
+<!--                             </div> -->
+                        {# endif #}
+                    <div id="service-container">
+                        <canvas id="canvasOne"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% addtoblock "css" %}
+    <link rel="stylesheet" type="text/css" href="{% static 'libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css' %}"/>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/vglobe.css' %}"/>
+{% endaddtoblock %}
+
+{% addtoblock "js" %}
+    <!-- Scrollbar effects -->
+    <script type="text/javascript" src="{% static 'libs/malihu-custom-scrollbar-plugin/jquery.mousewheel.js' %}"></script>
+    <script type="text/javascript" src="{% static 'libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js' %}"></script>
+
+    <!-- moduel js -->
+    <script type="text/javascript" src="{% static 'js/vglobe-main.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/selection-names.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/dock-bar.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/main-dock.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/dock-panel.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/select-panel.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/gis-toolbar.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/coordinate-overlay.js' %}"></script>
+
+    <!-- WWW -->
+<!--     <script type="text/javascript" src="http://worldwindserver.net/webworldwind/worldwindlib.js"></script> -->
+    <script type="text/javascript" src="{% static 'www/worldwindlib.js' %}"></script>
+    <script type="text/javascript" src="{% static 'www/LayerManager.js' %}"></script>
+    <script type="text/javascript" src="{% static 'www/coordinateController.js' %}"></script>
+    <script type="text/javascript" src="{% static 'www/www.js' %}"></script>
+    <script type="text/javascript" src="{% static 'www/handleZoom.js' %}"></script>
+    <script type="text/javascript" src="{% static 'www/handleAoi.js' %}"></script>
+    <script type="text/javascript" src="{% static 'www/handleCanvas.js' %}"></script>
+    <script type="text/javascript" src="{% static 'www/handleClick.js' %}"></script>
+    <script type="text/javascript" src="{% static 'www/handleShapefile.js' %}"></script>
+    <script type="text/javascript" src="{% static 'www/handleLayer.js' %}"></script>
+
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            init();
+        });
+    </script>
+{# block test-js #}
+<!--     <script type="text/javascript">
+//     $( document ).ready(function() {
+//         init();
+//     });
+     </script> -->
+{# endblock test-js #}
+{% endaddtoblock %}

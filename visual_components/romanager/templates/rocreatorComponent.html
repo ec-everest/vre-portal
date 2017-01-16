@@ -1,0 +1,36 @@
+{% extends "component-base.html" %}
+{% load cms_tags staticfiles sekizai_tags %}
+
+{% block content %}
+    <div id="r-cparent"></div>
+    
+    {% addtoblock "css" %}
+        <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/vc/romanager.css' %}">
+    {% endaddtoblock %}
+    
+    {% addtoblock "js" %}
+        <script type="text/javascript" src="{% static 'js/vc/rocreator.js' %}"></script>
+        <script type="text/javascript">
+            $(function () {
+                $( '#r-cparent' ).rocreator();
+            });
+        </script>
+    {% endaddtoblock %}
+{% endblock content %}
+
+{% block css-header %}
+&lt;link rel="stylesheet" type="text/css" media="all" href="{% static 'css/vc/romanager.css' %}"&gt;
+{% endblock css-header %}
+
+{% block js-header %}
+&lt;script type="text/javascript" src="{% static 'js/vc/rocreator.js' %}"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+    $(function () {
+        $( '#r-cparent' ).rocreator();
+    });
+&lt;/script&gt;
+{% endblock js-header %}
+
+{% block html %}
+&lt;div id="r-cparent"&gt;&lt;/div&gt;
+{% endblock html %}

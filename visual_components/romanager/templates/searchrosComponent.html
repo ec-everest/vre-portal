@@ -1,0 +1,46 @@
+{% extends "component-base.html" %}
+{% load cms_tags staticfiles sekizai_tags %}
+
+{% block content %}
+    <div id="r-parent"></div>
+    <div id="r-filters"></div>
+    <div id="r-list"></div>
+    
+    {% addtoblock "css" %}
+        <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/vc/romanager.css' %}">
+    {% endaddtoblock %}
+    
+    {% addtoblock "js" %}
+        <script type="text/javascript" src="{% static 'js/vc/rosearch.js' %}"></script>
+        <script type="text/javascript">
+            $(function () {
+                $( '#r-parent' ).rosearch( {
+                    searchParent: '#r-filters',
+                    listParent: '#r-list',
+                } );
+            });
+        </script>
+    {% endaddtoblock %}
+{% endblock content %}
+
+{% block css-header %}
+&lt;link rel="stylesheet" type="text/css" media="all" href="{% static 'css/vc/romanager.css' %}"&gt;
+{% endblock css-header %}
+
+{% block js-header %}
+&lt;script type="text/javascript" src="{% static 'js/vc/rosearch.js' %}"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+    $(function () {
+        $( '#r-parent' ).rosearch( {
+            searchParent: '#r-filters',
+            listParent: '#r-list',
+        } );
+    });
+&lt;/script&gt;
+{% endblock js-header %}
+
+{% block html %}
+&lt;div id="r-parent"&gt;&lt;/div&gt;
+&lt;div id="r-filters"&gt;&lt;/div&gt;
+&lt;div id="r-list"&gt;&lt;/div&gt;
+{% endblock html %}

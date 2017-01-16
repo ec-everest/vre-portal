@@ -1,0 +1,114 @@
+#d-results-cart {
+    border-radius: 0 0 0.3em 0 !important;
+}
+#d-parent {
+    margin: 0.5em;
+}
+
+#scrollArea {
+    height: 15em;
+    max-height: 15em;
+}
+
+#d-search-bar {
+    border: 0.1em solid #C6C6C6 !important;
+    border-radius: 0.3em !important;
+}
+
+#d-show-settings-panel {
+    border: 0.1em solid #FFF !important;
+    border-radius: 0.3em 0 0 0.3em !important;
+}
+#d-show-settings-panel.active {
+    background-color: #C10500 !important;
+    border: 0.1em solid #C10500 !important;
+    color: #FFF !important;
+}
+#d-show-results-panel {
+    border: 0.1em solid #FFF !important;
+    border-radius: 0 !important;
+}
+#d-show-results-panel.active {
+    background-color: #C10500 !important;
+    border: 0.1em solid #C10500 !important;
+    color: #FFF !important;
+}
+
+#d-search-text {
+    border: 0.1em solid #FFF !important;
+}
+
+#d-search {
+    border: 0.1em solid #C10500 !important;
+    border-radius: 0 0.3em 0.3em 0 !important;
+}
+
+#d-settings-panel, #d-results-panel {
+    margin-top: 0.2em;
+}
+
+#d-settings-panel form {
+    padding-top: 0;
+}
+
+#d-results-panel h3 {
+    margin-top: 0;
+}
+
+#d-settings-panel form h3 {
+    margin-top: 0;
+}
+
+#d-settings-panel form label {
+    /* TODO remove */
+/*     margin-top: 0.4em; */
+/*     margin-bottom: 0.4em; */
+    font-weight: unset;
+}
+#d-settings-panel form .form-control {
+    padding: 0.3em 0.3em !important;
+}
+#d-srd, #d-std {
+    border-radius: 0.3em 0 0 0.3em !important;
+}
+#d-settings-panel form input {
+    border-radius: 0.3em;
+}
+
+#d-results-table {
+    /*border: 0.1em solid #C10500 !important;*/
+/*     margin: 0.5em; */
+}
+
+#contentArea > tr > td.container:hover {
+    background-color: #C10500;
+    color: #FFFFFF;
+}
+.d-row > td > div.func-row > div:hover {
+    background-color: #C10500;
+    color: #FFFFFF !important;
+}
+/* ========== RESULTS NAVIGATOR */
+#d-results-panel-navigator {
+    padding-bottom: 0.2em;
+}
+#d-results-panel-navigator > ul {
+    margin: 0em;
+}
+#d-results-panel-navigator > ul > li > a {
+    border: none;
+    color: #C10500;
+    padding: 0em 0.5em;
+}
+/* ==================== */
+@media (min-width: 550px) {
+    #d-parent {
+        min-width: 97%;
+        width: 97%;
+    }
+
+    #scrollArea {
+        height: 20em;
+        max-height: 20em;
+    }
+}

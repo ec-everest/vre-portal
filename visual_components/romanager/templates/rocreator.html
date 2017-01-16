@@ -1,0 +1,16 @@
+{% load cms_tags staticfiles sekizai_tags %}
+
+<div id="r-cparent"></div>
+
+{% addtoblock "css" %}
+    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/vc/romanager.css' %}">
+{% endaddtoblock %}
+
+{% addtoblock "js" %}
+    <script type="text/javascript" src="{% static 'js/vc/rocreator.js' %}"></script>
+    <script type="text/javascript">
+        $(function () {
+            $( '#r-cparent' ).romanager();
+        });
+    </script>
+{% endaddtoblock %}
